@@ -1,0 +1,689 @@
+/*============================
+    General CSS Starts Here   
+=============================*/
+    :focus {
+        outline: -webkit-focus-ring-color auto 0px;
+    }
+
+    button:focus {
+        outline: 0px dotted;
+        outline: 0px auto -webkit-focus-ring-color;
+    }
+
+    [type=submit],
+    button,
+    html [type=button] {
+        -webkit-appearance: none;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    a {
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+
+    @media(min-width: 2560px) {
+        body {
+            font-size: 18px;
+        }
+        .my_container {
+            max-width: 2293.3px;
+            max-width: 1720px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 1920px) {
+        body {
+            font-size: 18px;
+        }
+        .my_container {
+            max-width: 1720px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 1919px) {
+        body {
+            font-size: 17px;
+        }
+        .my_container {
+            max-width: 1361.67px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 1440px) {
+        body {
+            font-size: 16px;
+        }
+        .my_container {
+            max-width: 1290px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 1366px) {
+        body {
+            font-size: 14px;
+        }
+        .my_container {
+            max-width: 1223.708px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 1280px) {
+        body {
+            font-size: 13px;
+        }
+        .my_container {
+            max-width: 1146.67px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 1194px) {
+        body {
+            font-size: 12px;
+        }
+        .my_container {
+            max-width: 1069.625px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 834px) {
+        body {
+            font-size: 11.5px;
+        }
+        .my_container {
+            max-width: 747.125px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    }
+
+    @media(max-width: 767px) {
+        body {
+            font-size: 10px;
+        }
+    }
+
+    .img-circle {
+        border-radius: 100%;
+    }
+
+    .btn.focus, .btn:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0rem rgb(0 123 255 / 25%);
+    }
+
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+/*============================
+    General CSS Ends Here    
+============================*/
+
+/*============================
+    Header CSS Starts Here   
+=============================*/
+    .menu {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        padding: 0;
+    }
+
+    .line {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+
+    .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+    }
+
+    .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+    }
+
+    .opened .line1 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+
+    .opened .line2 {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+        stroke-width: 6;
+    }
+
+    .opened .line3 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+    }
+
+    .collapse.show {
+        display: block;
+        align-items: center;
+    }
+
+    header {
+        padding: 0 3.375em;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 11;
+    }
+
+    .headerbg {
+        background: #ffffff;
+        box-shadow: 0px 0px 3px 3px rgb(0 0 0 / 16%);
+    }
+
+    .navbar-brand {
+        font-family: Poppins;
+        font-size: 2.250em;
+        font-weight: 700;
+        line-height: 1.500em;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+        transition: 0.3s ease;
+    }
+
+    .headerbg .navbar-brand {
+        color: #212121;        
+    }
+
+    .headerbg .navbar-brand:hover {
+        color: #5B68DF;        
+    }
+
+    .navbar-brand:hover {
+        color: #212121;
+        transition: 0.3s ease;
+    }
+
+    header .nav-link {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.000em;
+        line-height: 1.500em;
+        text-align: center;
+        color: #212121;
+        padding: 0.5em 1em;
+        margin: 0 2.25em;
+        display: inline-block;
+    }
+
+    header .nav-link:hover {
+        color: #5B68DF;
+    }
+
+    .navbar-expand-md .navbar-nav .login_btn .nav-link {
+       margin-right: 0;
+    }
+
+    .cgcta {
+        background: linear-gradient(90deg, #73E0A9 0%, #5B68DF 100%) !important;
+        border-radius: 100px;
+        color: #ffffff !important;
+        padding: 0.5em 4.125em !important;
+        display: inline-block !important;
+        text-decoration: none !important;
+    }
+
+    .cgcta:hover {
+        background: linear-gradient(180deg, #73E0A9 0%, #5B68DF 100%);
+        transition: 0.3s ease;
+        text-decoration: none;
+    }
+/*============================
+    Header CSS Ends Here   
+=============================*/
+
+/*============================
+    Footer CSS Starts Here   
+=============================*/ 
+    footer {
+        position: relative;
+        padding-top: 13.125em;
+        padding-bottom: 4.813em;
+    }
+
+    footer:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url(../images/footerVector.png);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .footer_logo a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.250em;
+        line-height: 1.500em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .footer_logo a:hover {
+        color: #212121;
+        text-decoration: none;
+    }
+
+    .footer_about_desc {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.375em;
+        line-height: 1.500em;
+        color: #FFFFFF;
+        width: 100%;
+        max-width: 75%;
+    }
+
+    .footer_links_title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.250em;
+        line-height: 1.5em;
+        padding-bottom: 1em;
+        background: linear-gradient(90.71deg, #73E0A9 0%, #5B68DF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .footer_link ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .footer_link a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125em;
+        line-height: 1.500em;
+        text-align: justify;
+        color: #212121;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 0.667em;
+    }
+
+    .footer_links.sm ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer_links.sm ul li {
+        max-width: 33.33%;
+        width: 100%;
+        padding-bottom: 1.25em;
+    }
+/*============================
+    Footer CSS Ends Here   
+=============================*/
+
+/*=============================
+    Homepage CSS Starts Here   
+=============================*/
+    .section1 {
+        position: relative;
+    }
+
+    .section1:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../images/Vector1.png);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    .section1:after {
+        background: url(../images/Vector4.png);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        z-index: 1;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 15%;
+        background-position: top right;
+        z-index: -1;
+    }
+
+    .section1_inner {
+        padding: 20em 0 13em 19.125em;
+    }
+
+    .section1_text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4em;
+        line-height: 1.500em;
+        text-transform: uppercase;
+        color: #212121;
+        max-width: 60.5%;
+    }
+
+    .shape1 {
+        position: absolute;
+        top: 8.75em;
+        left: 37.688em;
+        z-index: -1;
+    }
+
+    .shape2 {
+        position: absolute;
+        top: 29.375em;
+        left: 53.75em;
+        z-index: -1;
+    }
+
+    .shape3 {
+        position: absolute;
+        left: 0;
+        top: 29.375em;
+        z-index: -1;
+    }
+
+    .section2 {
+        padding: 10em 0;
+    }
+
+    .section2_content {
+        padding-top: 36%;
+    }
+
+    .section2_title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.250em;
+        line-height: 1.500em;
+        text-transform: uppercase;
+        color: #212121;
+        max-width: 85%;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    .section2_desc {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.500em;
+        color: #000000;
+        margin: 0 0 1.5em;
+    }
+
+    .section2_cta .cgcta {
+        padding: 0.5em 2.75em !important;
+    }
+
+    .section2_img {
+        background: url(../images/section2_imgbg.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .section3 {
+        padding-bottom: 6.25em;
+    }
+
+    .product_card {
+        margin-bottom: 4.5em;
+    }
+
+    .product_card_inner {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px 5px rgb(0 0 0 / 15%);
+        border-radius: 30px;
+        overflow: hidden;
+        margin: 0 auto; 
+        max-width: 23.125em;
+        width: 100%;
+        max-height: 27.500em;
+        height: 100%;
+    }
+
+    .product_image img {
+        width: 100%;
+        height: 100%;
+        max-width: 23.125em;
+        min-height: 19.625em;
+        max-height: 19.625em;
+        box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 25%);
+        border-radius: 30px;
+    }
+
+    .product_details {
+        padding: 1.5em 1.125em;
+    }
+
+    .product_name a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        color: #212121;
+        text-decoration: none;
+    }
+    
+    .product_name a:hover {
+        color: #5B68DF;
+        text-decoration: none;
+    }
+
+    .product_price_count {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        color: #747474;
+    }
+
+    .col-md-4{
+      display:none;
+    }
+
+    .load-more {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: #5C6DDE;
+    }
+/*============================
+    Homepage CSS Ends Here   
+=============================*/
+
+@media(max-width:  835px) {
+    /*============================
+        Header CSS Starts Here   
+    =============================*/
+        header {
+            padding: 0;
+        }
+
+        .headerbg .line {
+            fill: none;
+            stroke: #212121;
+        }
+
+        header .nav-link {
+            padding: 1.5em 1em;
+            margin: 0;
+        }
+
+        .navbar-expand-md .navbar-nav .login_btn .nav-link {
+            background: none;
+            margin: 0;
+            padding: 1.5em 0;
+        }
+
+        .navbar-nav {
+            background: #ffffff;
+        }
+
+        .navbar-expand-md .navbar-nav .login_btn .nav-link {
+            padding: 0.5em 2em !important;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        header .nav-item {
+            text-align: center;
+        }
+    /*============================
+        Header CSS Ends Here   
+    =============================*/
+    /*============================
+        Footer CSS Starts Here   
+    =============================*/
+        footer:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url(../images/footerVector.png);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: -75% 0%;
+        }
+
+        footer {
+            position: relative;
+            padding-top: 16em;
+            padding-bottom: 1em;
+        }
+        
+        footer:before {
+            background-position: top center;
+            background-size: cover;
+        }
+
+        .footer_logo a {
+            font-size: 2.8em;
+            padding-bottom: 0.5em;
+        }
+
+        .footer_about_desc {
+            max-width: 100%;
+        }
+
+        .footer_links_title {
+            font-weight: 800;
+            font-size: 1.80em;
+            padding-top: 1.5em;
+            background: #ffffff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .footer_link a {
+            color: #ffffff;
+            font-size: 1.3em;
+        }
+
+        .footer_links.sm ul li {
+            max-width: 12.33%;
+            width: 100%;
+            padding-bottom: 0;
+            text-align: center;
+        }
+    /*============================
+        Footer CSS Ends Here   
+    =============================*/
+}
+
+@media(max-width:  767px) {
+    /*=============================
+        Homepage CSS Starts Here   
+    =============================*/
+        .section1_inner {
+            padding: 20em 0 13em 0;
+        }
+
+        .section1_text {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .product_card_inner {
+            max-width: 95%;
+            max-height: max-content;
+        }
+
+        .product_image img {
+            max-width: initial;
+            min-height: auto;
+            max-height: max-content;
+        }
+    /*============================
+        Homepage CSS Ends Here   
+    =============================*/    
+}
