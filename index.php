@@ -218,33 +218,4 @@
 		</div>
 	</footer>
 </body>
-<script type="text/javascript">
-	$(document).ready(function() {
-	  $('.col-md-4').hide();
-	   $('.col-md-4').each(function(index,value) {
-	     if(index < 3) {
-	       $(this).show();
-	     }
-	   });
-	  if($('.col-md-4:hidden').length) {
-	    $('#more').show();
-	  }
-	  if(!$('.col-md-4:hidden').length) {
-	      $('#more').hide();
-	    }
-	  
-	});
-
-
-	$('#more').on('click', function() {
-	    $('.col-md-4:hidden').each(function(index, value) {
-	       if(index < 3) {
-	         $(this).show();
-	       }
-	    });
-	    if(!$('.col-md-4:hidden').length) {
-	      $('#more').hide();
-	    }
-	});
-</script>
 </html>
